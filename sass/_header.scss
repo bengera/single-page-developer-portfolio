@@ -1,0 +1,72 @@
+// NAVIGATION
+.navigation {
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+
+
+    &__social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+}
+
+//HEADER
+
+.header {
+    text-align: center;
+
+    &__profile-pic {
+        width: 174px;
+        margin: 0 auto;
+    }
+
+    &__inner-container {
+
+        min-width: 325px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-image: url(../img/pattern-rings.svg), url(../img/pattern-circle.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -340px 120px, 120% 70%;
+    }
+
+    &__heading {
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFF;
+    }
+
+    &__description {
+        font-size: 16px;
+        max-width: 348px;
+        min-width: 325px;
+        margin: 0 auto;
+    }
+
+    // &__cta {
+    //     text-transform: uppercase;
+    //     letter-spacing: 2.29px;
+    //     border-bottom: 2px solid $color-green;
+    //     max-width: 120px;
+    //     margin: 0 auto;
+    //     padding-bottom: 0.5rem;
+    //     margin-top: 24px;
+    //     cursor: pointer;
+    // }
+
+
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $color-green;
+    text-underline-offset: 12px;
+}

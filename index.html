@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -16,13 +16,168 @@
 
 <body>
 
+  <div class="master-container">
 
-  <h1>Hello</h1>
-  adamkeyes
+    <nav class="navigation">
+      <h3 class="h-m">adamkeyes</h3>
+      <div class="navigation__social">
+        <img src="./img/icon-github.svg" alt="icon-github">
+        <img src="./img/icon-frontend-mentor.svg" alt="icon-frontend-mentor">
+        <img src="./img/icon-linkedin.svg" alt="icon-linkedin">
+        <img src="./img/icon-twitter.svg" alt="icon-twitter">
+      </div>
+    </nav>
 
-  Nice to meet you! I'm Adam Keyes.
 
-  Based in the UK, I'm a front-end developer passionate about
+    <header class="header">
+      <div class="header__inner-container">
+        <img class="header__profile-pic" src="./img/image-profile-mobile.webp" alt="profile-pic">
+        <h1 class="header__heading">Nice to meet you! I'm <span class="underline">Adam Keyes</span>.</h1>
+      </div>
+      <p class="header__description">
+        Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
+      </p>
+      <p class="cta cta-header">Contact me</p>
+    </header>
+
+    <main>
+      <section class="experience">
+        <img class="experience__rings" src="./img/pattern-rings.svg" alt="rings">
+        <div class="experience__item">
+          <p class="experience__skill">HTML</p>
+          <small class="experience__time">4 years Experience</small>
+        </div>
+        <div class="experience__item">
+          <p class="experience__skill">CSS</p>
+          <small class="experience__time">4 years Experience</small>
+        </div>
+        <div class="experience__item">
+          <p class="experience__skill">JavaScript</p>
+          <small class="experience__time">4 years Experience</small>
+        </div>
+        <div class="experience__item">
+          <p class="experience__skill">Accessibility</p>
+          <small class="experience__time">4 years Experience</small>
+        </div>
+        <div class="experience__item">
+          <p class="experience__skill">React</p>
+          <small class="experience__time">3 years Experience</small>
+        </div>
+        <div class="experience__item">
+          <p class="experience__skill">Sass</p>
+          <small class="experience__time">3 years Experience</small>
+        </div>
+
+
+      </section>
+
+      <section class="projects">
+        <div class="projects__top">
+          <h2 class="projects__heading">Projects</h2>
+          <p class="cta cta-projects">Contact me</p>
+        </div>
+
+        <div class="gallery">
+
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-1-small.webp" alt="project-1">
+            <p class="gallery__title">Design Portfolio</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-2-small.webp" alt="project-2">
+            <p class="gallery__title">e-learning landing page</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-3-small.webp" alt="project-3">
+            <p class="gallery__title">to do web app</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+              <li class="gallery__list-item">JAVASCRIPT</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+          
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-4-small.webp" alt="project-4">
+            <p class="gallery__title">Entertainment web app</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+              <li class="gallery__list-item">JAVASCRIPT</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-5-small.webp" alt="project-5">
+            <p class="gallery__title">Memory game</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+              <li class="gallery__list-item">JAVASCRIPT</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img class="gallery__img" src="./img/thumbnail-project-6-small.webp" alt="project-6">
+            <p class="gallery__title">art gallery showcase</p>
+            <ul class="gallery__list-languages">
+              <li class="gallery__list-item">HTML</li>
+              <li class="gallery__list-item">CSS</li>
+              <li class="gallery__list-item">JAVASCRIPT</li>
+            </ul>
+            <div class="gallery__links">
+              <p class="cta cta-projects-item">View Project</p>
+              <p class="cta cta-projects-item">View Code</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__heading">Contact</h2>
+      </section>
+
+    </main>
+
+  </div>
+
+
+
+
+  <!-- Based in the UK, I'm a front-end developer passionate about
   building accessible web apps that users love.
 
   Contact me
@@ -90,7 +245,7 @@
 
   Send message
 
-  adamkeyes
+  adamkeyes -->
 
 </body>
 

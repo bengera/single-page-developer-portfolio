@@ -1,0 +1,61 @@
+
+// PROJECTS
+
+.projects {
+
+    &__heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.13636px;
+        color: #FFF;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// PROJECTS - GALLERY
+
+.gallery {
+    margin-top: 40px;
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #FFF;
+
+    }
+
+    &__list-languages {
+        font-size: 18px;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__links {
+        display: flex;
+    }
+}
+
+p.cta-projects-item:nth-child(2) {
+    margin-left: 2rem;
+}
