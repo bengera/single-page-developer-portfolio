@@ -25,11 +25,13 @@
     &__profile-pic {
         width: 174px;
         margin: 0 auto;
+        margin-bottom: 40px;
     }
 
     &__inner-container {
 
         min-width: 325px;
+        // max-width: 362px;
         max-width: 600px;
         margin: 0 auto;
         background-image: url(../img/pattern-rings.svg), url(../img/pattern-circle.svg);
@@ -41,6 +43,11 @@
         font-size: 40px;
         line-height: 40px;
         color: #FFF;
+
+        max-width: 362px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
     }
 
     &__description {
