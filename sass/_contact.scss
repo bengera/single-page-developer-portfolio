@@ -1,0 +1,116 @@
+.contact {
+    background-color: $color-dark-grey;
+    padding: 5rem 1rem;
+
+    &__left-content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__heading {
+        font-size: 40px;
+        color: #FFF;
+        margin-bottom: 20px;
+    }
+
+    &__rings {
+        position: absolute;
+        bottom: 10px;
+        lefT: -400px;
+    }
+
+    &__description {
+        max-width: 343px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control.error input {
+    border-bottom: 1px solid $color-red;
+}
+
+.form-control.success input {
+    border-color: $color-green;
+}
+
+
+input,
+textarea {
+    border: 0;
+    border-bottom: 1px solid $color-white;
+    color: $color-white;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+input {
+
+    height: 56px;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 19.41px;
+
+
+}
+
+.form-button {
+    background-color: transparent;
+    border: 0;
+    max-width: none;
+    align-self: flex-end;
+    border-bottom: 2px solid $color-green;
+    margin-top: 32px;
+    padding-bottom: 1rem;
+
+    // &:hover {
+    //     color: $color-green;
+    //     border-bottom: 2px solid $color-green;
+    // }
+}
+
+.error-message {
+    display: none;
+    text-align: right;
+    color: #FF6F5B;
+
+
+}
+
+.i-error {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+
+textarea {
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+
+
+
+
+}
+
+div.form-control:nth-child(3)>img:nth-child(3) {
+    top: 0;
+}
+
+

@@ -358,6 +358,7 @@ main {
   letter-spacing: 2.29px;
   border-bottom: 2px solid #4EE1A0;
   max-width: 120px;
+  text-decoration: none;
   padding-bottom: 0.5rem;
   cursor: pointer;
   color: #FFF; }
@@ -372,6 +373,16 @@ main {
   margin: 0 auto;
   margin-top: 24px;
   cursor: pointer; }
+
+.footer {
+  background-color: #242424;
+  text-align: center; }
+  .footer__inner {
+    border-top: 2px solid #FFFF;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
 
 .navigation {
   text-align: center;
@@ -413,6 +424,9 @@ main {
   text-decoration-thickness: 4px;
   text-decoration-color: #4EE1A0;
   text-underline-offset: 12px; }
+
+.social-icon {
+  cursor: pointer; }
 
 .experience {
   margin-top: 80px;
@@ -479,5 +493,82 @@ main {
   .gallery__links {
     display: flex; }
 
-p.cta-projects-item:nth-child(2) {
+a.cta:nth-child(2) {
   margin-left: 2rem; }
+
+.contact {
+  background-color: #242424;
+  padding: 5rem 1rem; }
+  .contact__left-content {
+    text-align: center;
+    margin-bottom: 50px; }
+  .contact__heading {
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 20px; }
+  .contact__rings {
+    position: absolute;
+    bottom: 10px;
+    lefT: -400px; }
+  .contact__description {
+    max-width: 343px;
+    margin: 0 auto; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative; }
+
+.form-control {
+  position: relative; }
+
+.form-control.error input {
+  border-bottom: 1px solid #FF6F5B; }
+
+.form-control.success input {
+  border-color: #4EE1A0; }
+
+input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid #FFFF;
+  color: #FFFF;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: 100%; }
+
+input {
+  height: 56px;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 19.41px; }
+
+.form-button {
+  background-color: transparent;
+  border: 0;
+  max-width: none;
+  align-self: flex-end;
+  border-bottom: 2px solid #4EE1A0;
+  margin-top: 32px;
+  padding-bottom: 1rem; }
+
+.error-message {
+  display: none;
+  text-align: right;
+  color: #FF6F5B; }
+
+.i-error {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 1rem; }
+
+textarea {
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 14px; }
+
+div.form-control:nth-child(3) > img:nth-child(3) {
+  top: 0; }
