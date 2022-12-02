@@ -10,18 +10,29 @@
     padding-bottom: 3.5rem;
     margin-bottom: 5rem;
     position: relative;
-   
-    // background-image: url(../img/pattern-rings.svg);
-    // background-repeat: no-repeat;
-    // background-position: 220px 580px, 120% 70%;
-    
+
+    @media only screen and (min-width: $bp-tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: none;
+
+    }
+
 
     &__item {
         margin: 0 auto;
         max-width: 170px;
         text-align: center;
         max-width: 75%;
-        
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+
+
+        }
+
     }
 
     &__skill {
@@ -30,6 +41,12 @@
         font-weight: 700;
         margin-bottom: 10px;
         color: #FFF;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 48px;
+            margin-bottom: 30px;
+
+        }
     }
 
     &__time {
@@ -40,7 +57,12 @@
         position: absolute;
         bottom: 0;
         bottom: -47px;
-        lefT: 224px;
+        left: 224px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            bottom: 0%;
+            left: 74%;
+        }
 
     }
 }

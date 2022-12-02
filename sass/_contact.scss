@@ -2,6 +2,14 @@
     background-color: $color-dark-grey;
     padding: 5rem 1rem;
 
+    &__inner-container {
+        @media only screen and (min-width: $bp-tablet) {
+            width: 445px;
+            margin: 0 auto;
+
+        }
+    }
+
     &__left-content {
         text-align: center;
         margin-bottom: 50px;
@@ -11,6 +19,12 @@
         font-size: 40px;
         color: #FFF;
         margin-bottom: 20px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 72px;
+            padding-bottom: 1rem;
+
+        }
     }
 
     &__rings {
@@ -112,5 +126,3 @@ textarea {
 div.form-control:nth-child(3)>img:nth-child(3) {
     top: 0;
 }
-
-
