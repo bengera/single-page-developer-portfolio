@@ -362,6 +362,9 @@ main {
   padding-bottom: 0.5rem;
   cursor: pointer;
   color: #FFF; }
+  @media only screen and (min-width: 62.5em) {
+    .cta:hover {
+      color: #4EE1A0; } }
 
 .cta-projects {
   cursor: pointer; }
@@ -419,6 +422,14 @@ main {
 
 .header {
   text-align: center; }
+  .header__rings-desktop {
+    display: none; }
+    @media only screen and (min-width: 62.5em) {
+      .header__rings-desktop {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: -230px; } }
   .header__picture {
     grid-column: 2 / 2; }
     @media only screen and (min-width: 37.5em) {
@@ -429,6 +440,11 @@ main {
         top: 0;
         margin-bottom: 60px;
         z-index: -9999; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__picture {
+        position: absolute;
+        top: -101px;
+        margin: 0; } }
   .header__profile-pic {
     width: 174px;
     margin: 0 auto;
@@ -436,6 +452,9 @@ main {
     @media only screen and (min-width: 37.5em) {
       .header__profile-pic {
         width: 359px; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__profile-pic {
+        width: 445px; } }
   .header__inner-container {
     min-width: 325px;
     max-width: 600px;
@@ -453,6 +472,13 @@ main {
         max-width: none;
         min-width: none;
         background-position: -340px 50px, 110% 100%; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__inner-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        position: relative;
+        padding-bottom: 10rem;
+        background-image: none; } }
   @media only screen and (min-width: 37.5em) {
     .header__left-content {
       display: flex;
@@ -463,6 +489,26 @@ main {
       margin-top: 7rem;
       word-break: break-word;
       max-width: 460px; } }
+  @media only screen and (min-width: 62.5em) {
+    .header__left-content {
+      grid-row: 1;
+      min-width: 780px; } }
+  .header__heading-desktop {
+    display: none; }
+    @media only screen and (min-width: 62.5em) {
+      .header__heading-desktop {
+        display: block;
+        color: #FFF;
+        max-width: 362px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        grid-row: 1 / 1;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 88px;
+        line-height: 88px;
+        z-index: 200;
+        max-width: none; } }
   .header__heading {
     font-size: 40px;
     line-height: 40px;
@@ -479,6 +525,9 @@ main {
         line-height: 72px;
         z-index: 200;
         max-width: none; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__heading {
+        display: none; } }
   .header__description {
     font-size: 16px;
     max-width: 348px;
@@ -491,6 +540,9 @@ main {
         text-align: left;
         margin: 0;
         margin-top: 60px; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__description {
+        margin: 0; } }
 
 .underline {
   text-decoration: underline;
@@ -526,6 +578,11 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr;
       border-bottom: none; } }
+  @media only screen and (min-width: 62.5em) {
+    .experience {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 7.5rem;
+      gap: 65px; } }
   .experience__item {
     margin: 0 auto;
     max-width: 170px;
@@ -557,6 +614,9 @@ main {
       .experience__rings {
         bottom: 0%;
         left: 74%; } }
+    @media only screen and (min-width: 62.5em) {
+      .experience__rings {
+        left: 87%; } }
 
 .projects__heading {
   font-weight: 700;
@@ -569,6 +629,9 @@ main {
 .projects__top {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (min-width: 62.5em) {
+    .projects__top {
+      margin-bottom: 80px; } }
 
 .gallery {
   margin-top: 40px; }
@@ -585,9 +648,27 @@ main {
     gap: 1rem;
     margin: 0 auto;
     margin-bottom: 40px; }
+    @media only screen and (min-width: 62.5em) {
+      .gallery__item {
+        position: relative; } }
   .gallery__img {
     width: 100%;
     margin-bottom: 10px; }
+  @media only screen and (min-width: 62.5em) {
+    .gallery__image-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(100% - 90px);
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: RGBA(0, 0, 0, 0.6);
+      cursor: pointer; } }
+  .gallery__image-overlay:hover {
+    opacity: 1; }
   .gallery__title {
     font-size: 24px;
     text-transform: uppercase;
@@ -600,9 +681,35 @@ main {
     text-transform: uppercase; }
   .gallery__links {
     display: flex; }
+    @media only screen and (min-width: 62.5em) {
+      .gallery__links {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        left: 42%;
+        top: 31%;
+        gap: 2rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .gallery__image-overlay-container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      gap: 1rem; } }
 
 a.cta:nth-child(2) {
   margin-left: 2rem; }
+  @media only screen and (min-width: 62.5em) {
+    a.cta:nth-child(2) {
+      margin: 0;
+      text-align: center; } }
+
+.cta.cta-projects-item.link-overlay {
+  display: none; }
+  @media only screen and (min-width: 62.5em) {
+    .cta.cta-projects-item.link-overlay {
+      display: block; } }
 
 .contact {
   background-color: #242424;

@@ -93,6 +93,14 @@ main {
     padding-bottom: 0.5rem;
     cursor: pointer;
     color: #FFF;
+
+    @media only screen and (min-width: $bp-desktop) {
+         
+        &:hover {
+            color: $color-green;
+        }
+            
+    }
 }
 
 .cta-projects {

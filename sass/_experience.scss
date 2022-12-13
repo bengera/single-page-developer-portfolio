@@ -18,6 +18,13 @@
 
     }
 
+    @media only screen and (min-width: $bp-desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 7.5rem;
+        gap: 65px;
+
+    }
+
 
     &__item {
         margin: 0 auto;
@@ -62,6 +69,11 @@
         @media only screen and (min-width: $bp-tablet) {
             bottom: 0%;
             left: 74%;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            left: 87%;
+
         }
 
     }

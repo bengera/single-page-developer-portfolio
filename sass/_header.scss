@@ -34,6 +34,18 @@
 .header {
     text-align: center;
 
+    &__rings-desktop {
+        display: none;
+
+        @media only screen and (min-width: $bp-desktop) {
+            display: block;
+            position: absolute;
+            top: 55px;
+            left: -230px;
+
+        }
+    }
+
     &__picture {
         grid-column: 2 / 2;
 
@@ -45,6 +57,17 @@
             margin-bottom: 60px;
             z-index: -9999;
         }
+
+        @media only screen and (min-width: $bp-desktop) {
+            position: absolute;
+            top: -101px;
+            margin: 0;
+
+
+
+
+        }
+
     }
 
     &__profile-pic {
@@ -54,7 +77,12 @@
 
         @media only screen and (min-width: $bp-tablet) {
             width: 359px;
-            
+
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            width: 445px;
+
         }
 
     }
@@ -79,7 +107,18 @@
             background-position: -340px 50px, 110% 100%;
 
         }
+
+        @media only screen and (min-width: $bp-desktop) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: none;
+            position: relative;
+            padding-bottom: 10rem;
+            background-image: none;
+
+        }
     }
+
+
 
     &__left-content {
 
@@ -94,7 +133,37 @@
             max-width: 460px;
         }
 
+        @media only screen and (min-width: $bp-desktop) {
+            grid-row: 1;
+
+            min-width: 780px;
+
+        }
+
     }
+
+    &__heading-desktop {
+        display: none;
+
+
+        @media only screen and (min-width: $bp-desktop) {
+            display: block;
+            color: #FFF;
+            max-width: 362px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+
+            grid-row: 1 / 1;
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 88px;
+            line-height: 88px;
+            z-index: 200;
+            max-width: none;
+
+        }
+    }
+
 
 
     &__heading {
@@ -104,7 +173,7 @@
         max-width: 362px;
         margin: 0 auto;
         margin-bottom: 40px;
-        
+
 
         @media only screen and (min-width: $bp-tablet) {
             grid-row: 1 / 1;
@@ -114,7 +183,12 @@
             line-height: 72px;
             z-index: 200;
             max-width: none;
-            
+
+
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            display: none;
 
         }
 
@@ -135,6 +209,11 @@
             text-align: left;
             margin: 0;
             margin-top: 60px;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            margin: 0;
+
         }
     }
 

@@ -23,10 +23,9 @@ function checkInputs() {
 
     if (emailValue === '') {
         setErrorFor(email, 'Email cannot be empty')
-    }  else if (!isEmail(emailValue)){
+    } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Sorry, invalid format here');
-    }
-    else {
+    } else {
         setSuccessFor(email)
     }
 
@@ -38,6 +37,8 @@ function checkInputs() {
 
 }
 
+// FORM VALIDATION MESSAGES
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const errorMessage = formControl.querySelector('.error-message');
@@ -45,7 +46,7 @@ function setErrorFor(input, message) {
     const errorIcon = formControl.querySelector('.i-error');
     errorIcon.setAttribute("style", "display:block");
     errorMessage.setAttribute("style", "display:block");
-    formControl.className = 'form-control error';     
+    formControl.className = 'form-control error';
 }
 
 function setSuccessFor(input) {
@@ -55,10 +56,28 @@ function setSuccessFor(input) {
     formControl.className = 'form-control success';
     const errorIcon = formControl.querySelector('.i-error');
     errorIcon.setAttribute("style", "display:none");
-      
-}
 
+}
+// EMAIL VALIDATION
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+// WINDOW RESIZING H1 
+window.addEventListener('resize', resize);
+
+function resize() {
+    const spanH1 = document.querySelector('.header__heading');
+    if (window.innerWidth > 1000) {
+    spanH1.setAttribute("style", "display:none");   
+        
+    } else if (window.innerWidth < 1000) {
+        spanH1.setAttribute("style", "display:block");  
+    }
+
+}
+
+
+
+
 
