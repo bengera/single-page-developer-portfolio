@@ -67,7 +67,7 @@
             width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: RGBA(0, 0, 0, 0.6);
+            background-color: RGBA(0, 0, 0, 0.7);
             cursor: pointer;
 
         }
@@ -147,16 +147,3 @@ a.cta:nth-child(2) {
     }
 }
 
-// .gallery__item:hover > .gallery__links {
-
-//     @media only screen and (min-width: $bp-desktop) {
-//         display: flex;
-//         flex-direction: column;
-
-//     }
-    
-//   }
-
-//   .cta-projects-item:hover > .gallery__image-overlay {
-//     opacity: 1;
-//   }
