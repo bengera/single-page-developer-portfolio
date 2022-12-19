@@ -535,6 +535,14 @@ svg {
     @media only screen and (min-width: 62.5em) {
       .header__description {
         margin: 0; } }
+  .header__circle-desktop {
+    display: none; }
+    @media only screen and (min-width: 62.5em) {
+      .header__circle-desktop {
+        position: absolute;
+        display: block;
+        top: 417px;
+        left: 622px; } }
 
 .underline {
   text-decoration: underline;

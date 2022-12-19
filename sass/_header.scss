@@ -217,7 +217,23 @@
         }
     }
 
+    &__circle-desktop {
+        display: none;
+
+        @media only screen and (min-width: $bp-desktop) {
+
+            position: absolute;
+            display: block;
+            top: 417px;
+            left: 622px;
+
+        }
+    }
+
+
 }
+
+
 
 //SPAN ELEMENTS
 
