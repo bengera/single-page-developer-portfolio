@@ -1,9 +1,6 @@
 # Frontend Mentor - Single page developer portfolio
 
-This is a solution to the [Intro component with sign-up form on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Overview
-Quick Challenge to become more aquainted with forms and how validation works.
+This is a solution to the [Single page developer portfolio on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## The challenge
 
