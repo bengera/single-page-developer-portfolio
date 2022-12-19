@@ -24,12 +24,18 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The text-decoration-thickness CSS property sets the stroke thickness of the decoration line that is used on text in an element, such as a line-through, underline, or overline.
 
-To see how you can add code snippets, see below:
-
+I also found out how to target the the svg fill property.
 
 ```css
 text-decoration-thickness: 3px;
 text-underline-offset: 8px;
+
+svg:hover path {
+    @media only screen and (min-width: $bp-desktop) {
+        fill: #4EE1A0;     
+    }
+      
+}
 ```
